@@ -1,0 +1,44 @@
+{
+    /* See all the pre-defined configs here: https://www.npmjs.com/package/eslint-config-defaults */
+    "extends": [
+        "airbnb"
+    ],
+    "parser": "babel-eslint",
+    "env": {
+        "amd": true,
+        "browser": true,
+        "jquery": true,
+        "node": true,
+        "jest": true,
+        "es6": true,
+        "worker": true,
+        "mocha": false, // adds all of the Mocha testing global variables.
+        "jasmine": false, // adds all of the Jasmine testing global variables for version 1.3 and 2.0.
+        "prototypejs": false, // prototypejs global variables.
+        "phantomjs": false, // phantomjs global variables.
+        "shelljs": false, // shelljs global variables.
+        "meteor": false, // meteor global variables.
+        "mongo": false, // mongo global variables.
+        "applescript": false // applescript global variables.
+    },
+    "rules": {
+        "indent": [2, 2], // this option sets a specific tab width for your code (off by default)
+        "react/jsx-indent-props": [ 2, 2 ],
+        "react/jsx-indent": [ 2, 2 ],
+        "no-plusplus": "warn", // disallow use of unary operators, ++ and -- (off by default)
+        "wrap-iife": ["error", "any"],
+        "no-console": "warn",
+        "comma-dangle": ["error", {
+            "arrays": "never",
+            "objects": "always",
+            "imports": "only-multiline",
+            "exports": "only-multiline",
+            "functions": "never"
+        }],
+        max-len: [0],
+        no-unreachable: [0]
+    },
+    "globals": {
+        "__DEV__": true
+    }
+}
